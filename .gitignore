@@ -1,0 +1,13 @@
+# History and Workspace files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# Do not push the raw data to GitHub (best practice for data privacy)
+data/raw/

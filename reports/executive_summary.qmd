@@ -1,0 +1,45 @@
+---
+title: "Predicting Medical Insurance Costs: A Data-Driven Approach"
+author: "David Namgung"
+date: today
+format: 
+  html:
+    theme: flatly
+    toc: true
+    toc-depth: 2
+    smooth-scroll: true
+execute: 
+  echo: false
+  warning: false
+---
+
+## 1. Executive Summary
+This project analyzes a medical insurance dataset to identify the primary drivers of patient charges and builds a predictive machine learning model to estimate future costs. The goal is to provide actionable insights for risk assessment and targeted health interventions.
+
+## 2. The Business Problem
+Insurance providers need accurate methods to forecast patient costs based on demographic and health data. By understanding which factors exponentially increase medical bills, providers can adjust premiums accurately and incentivize healthier patient behaviors.
+
+## 3. Key Findings & Visual Insights
+During the Exploratory Data Analysis (EDA) phase, we discovered that age and Body Mass Index (BMI) have a baseline impact on costs, but **smoking status** is the absolute largest financial driver.
+
+Furthermore, smoking acts as a severe multiplier when combined with a high BMI. 
+
+![Impact of BMI and Smoking on Insurance Charges](../outputs/bmi_smoker_impact.png)
+
+*As seen in the chart above, patients with a high BMI who do not smoke see only a marginal increase in costs. However, patients who smoke and have a high BMI experience an exponential surge in medical charges.*
+
+## 4. Predictive Modeling
+To mathematically validate these visual findings and create a predictive engine, two machine learning models were trained and evaluated on a 20% holdout test set:
+
+1.  **Multiple Linear Regression (Baseline):** Provided high interpretability, proving statistically (via p-values < 0.05) that age, smoking, and BMI are significant drivers. It revealed that being a smoker adds a base cost of approximately $23,000 to a patient's expected charges.
+2.  **Random Forest (Champion Model):** A more advanced algorithm that builds hundreds of decision trees. It outperformed the linear baseline by successfully capturing the complex, non-linear interaction between smoking and BMI.
+
+**Model Performance (RMSE):**
+The Random Forest model achieved the lowest Root Mean Squared Error (RMSE), making it the superior engine for predicting precise dollar amounts for new patients.
+
+## 5. Strategic Recommendations
+1.  **Prioritize Smoking Cessation:** Because smoking is the heaviest financial burden, the highest return on investment will come from subsidizing programs that help policyholders quit smoking.
+2.  **Implement Dynamic Quoting:** The trained Random Forest model can be deployed as a backend tool for insurance agents to generate instant, highly accurate baseline quotes based on just a few basic patient inputs.
+
+---
+*Note: The interactive dashboard for this data can be viewed on Tableau Public (Link to be added).*
