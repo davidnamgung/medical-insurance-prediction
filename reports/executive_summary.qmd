@@ -24,7 +24,7 @@ During the Exploratory Data Analysis (EDA) phase, we discovered that age and Bod
 
 Furthermore, smoking acts as a severe multiplier when combined with a high BMI. 
 
-![Impact of BMI and Smoking on Insurance Charges](../outputs/bmi_smoker_impact.png)
+![Impact of BMI and Smoking on Insurance Charges](bmi_smoker_impact.png)
 
 *As seen in the chart above, patients with a high BMI who do not smoke see only a marginal increase in costs. However, patients who smoke and have a high BMI experience an exponential surge in medical charges.*
 
