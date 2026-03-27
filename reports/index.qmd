@@ -8,6 +8,7 @@ format:
     toc: true
     toc-depth: 2
     smooth-scroll: true
+    embed-resources: true
 execute: 
   echo: false
   warning: false
