@@ -1,7 +1,7 @@
 # 🏥 Medical Insurance Cost Predictor
 
-[![View Quarto Report](https://img.shields.io/badge/View-Executive_Summary-blue?style=for-the-badge)](PUT_YOUR_GITHUB_PAGES_LINK_HERE)
-[![View Tableau Dashboard](https://img.shields.io/badge/View-Interactive_Dashboard-orange?style=for-the-badge)](PUT_YOUR_TABLEAU_LINK_HERE)
+[![View Quarto Report](https://img.shields.io/badge/View-Executive_Summary-blue?style=for-the-badge)](https://github.com/davidnamgung/medical-insurance-prediction?tab=readme-ov-file)
+[![View Tableau Dashboard](https://img.shields.io/badge/View-Interactive_Dashboard-orange?style=for-the-badge)](https://public.tableau.com/views/MedicalInsuranceCostPrediction/MedicalInsuranceCostDrivers_?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 📌 Problem Statement & Motivation
 Medical insurance providers must accurately forecast patient costs to maintain financial stability and offer fair, risk-adjusted premiums. However, relying on generalized pricing models fails to capture how compounding health factors exponentially increase medical bills. 
